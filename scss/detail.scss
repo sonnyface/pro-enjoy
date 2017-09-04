@@ -1,0 +1,328 @@
+@import "main.scss";
+
+.content{
+	width:100%;		
+	
+	.detaBanner{
+		width:100%;
+		height:250px;
+		::-webkit-scrollbar {display:none}
+		.swiper,.swiperImg{
+			width:100%;
+			height:250px;
+			img{
+			width:100%;
+			}
+		}
+		.valueIfo{
+			width:100%;			
+			box-sizing:border-box;
+			padding:20px;
+
+			.detaTit{
+				width:100%;
+				font:23px "宋体";
+				color:#666;
+				white-space: nowrap;				
+			}
+			.dataWord{
+				width:100%;
+				font:20px "宋体";
+				color:#666;
+				margin:15px 0;	
+			}
+			.value{
+				width:100%;
+				font:23px "宋体";
+				color:#666;
+				padding-bottom: 5px;
+				span:nth-of-type(1){
+					color:red;
+				}
+				span:nth-of-type(2){
+					text-decoration: line-through;
+					font:20px "宋体";
+				}
+				span:nth-of-type(3){					
+					font:20px "宋体";
+				}
+			}
+		}
+		.kongBox{
+			width:100%;
+			height:10px;
+			background:#eee;			
+		}
+
+		.shopUse{
+			width:100%;			
+			box-sizing:border-box;
+			padding:20px;
+			.shopName{
+				width:100%;
+				text-align:center;
+				h2{
+					width:100%;
+					font:25px "宋体";
+					font-weight:900;
+					color:#000;										
+				}
+				hr{
+					width:30px;
+					margin:10px auto;
+				}
+
+			}
+			
+			.shoptit{
+				width:100%;
+				font:23px "宋体";
+				color:#666;
+				margin:30px 0 10px 0;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #ddd;
+			}
+			.address{
+				width:100%;
+				height:50px;
+				@include flexBox;
+				border-bottom: 1px solid #ddd;
+				padding:10px 0;
+
+				p:nth-of-type(1){
+					display:block;
+					width:50px;
+					height:100%;
+					i{
+						display:block;
+						width:100%;
+						margin:5px 0;
+					}
+				}
+				p:nth-of-type(2){
+					display:block;
+					@include flex(1);
+					height:100%;
+					font:18px "宋体";
+					color:#666;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow:ellipsis;
+				}
+			}
+			.phone{
+				width:100%;
+				height:50px;
+				@include flexBox;
+				border-bottom: 1px solid #ddd;
+				padding:10px 0;
+
+				p:nth-of-type(1){
+					display:block;
+					width:50px;
+					height:100%;
+					i{
+						display:block;
+						width:100%;
+						margin:5px;
+					}
+				}
+				p:nth-of-type(2){
+					display:block;
+					@include flex(1);
+					height:100%;
+					font:18px "宋体";
+					color:#666;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow:ellipsis;
+				}
+			}
+		}
+
+		.menu{
+			width:100%;			
+			box-sizing:border-box;
+			padding:20px;
+			.shopName{
+				width:100%;
+				text-align:center;
+				h2{
+					width:100%;
+					font:25px "宋体";
+					font-weight:900;
+					color:#000;										
+				}
+				hr{
+					width:30px;
+					margin:10px auto;
+				}
+			}
+			.menuTit{
+				width:100%;
+				text-align: center;
+				line-height: 30px;
+				font:20px "宋体";				
+				color:#666;	
+				padding-top:30px;	
+
+			}
+			ul{
+				width:100%;
+				li{
+					width:100%;
+					text-align: center;
+					line-height:30px;
+					font:20px "宋体";				
+					color:#666;
+				}
+			}
+
+		}
+
+		.bling{
+			width:100%;			
+			box-sizing:border-box;
+			padding:20px;
+			ul{
+				width:100%;
+				li{
+					width:100%;
+					margin-bottom:20px;
+					img{
+						width:100%;					
+					}
+					h4{
+						width:100%;
+						text-align:center;
+						padding:10px 0;						
+						font:20px "宋体";				
+						color:#666;
+					}
+					p{
+						width:100%;
+						font:18px "宋体";				
+						color:#666;
+					}
+				}	
+			}
+		}
+
+		.prompt{
+			width:100%;			
+			box-sizing:border-box;
+			padding:20px;
+			.promptName{
+				width:100%;
+				text-align:center;
+				h2{
+					width:100%;
+					font:25px "宋体";
+					font-weight:900;
+					color:#000;										
+				}
+				hr{
+					width:30px;
+					margin:10px auto;
+				}
+			}
+			ul{
+				width:100%;
+				li{
+					width:100%;					
+					list-style:disc;
+					margin:10px 0 10px 18px;
+					line-height:32px;
+					font:20px "宋体";
+					color:#000;
+				}
+			}
+			.instructions{
+				width:100%;
+				text-align:center;
+				@include flexBox;
+				@include flex-center;
+				p{
+					width:120px;
+					height:40px;
+					font-size:15px;
+					i{
+						padding-left:10px;
+					}
+				}
+			}
+			.service{
+				width:100%;
+				height:70px;
+				@include flexBox;
+				@include flex-center;
+				font-size:15px;
+				p{
+					width:100px;
+					height:40px;
+					border:1px solid #666;
+					text-align: center;
+					line-height:40px;
+				}
+			}
+		}
+
+		.doLike{
+			width:100%;			
+			box-sizing:border-box;
+			padding:20px;
+			.doLikeName{
+				width:100%;
+				text-align:center;
+				h2{
+					width:100%;
+					font:25px "宋体";
+					font-weight:900;
+					color:#000;										
+				}
+				hr{
+					width:30px;
+					margin:10px auto;
+				}
+			}
+			ul{
+				width:100%;
+				li{
+					width:100%;
+					@include flexBox;
+					margin:20px 0;
+					img{
+						width:100px;
+						height:70px;
+					}
+					.likeList{
+						@include flex(1);
+						padding-left:10px;
+						h5{
+							width:100%;
+							font:16px "宋体";
+							color:#666;
+							font-weight: 100;
+
+						}
+						p{
+							width:100%;
+							font:14px "宋体";
+							color:red;
+							padding-top:10px;
+						}
+					}
+				}
+			}
+
+
+		}
+		  		
+	}
+}
+
+
+
+
+
+

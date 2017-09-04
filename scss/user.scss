@@ -1,0 +1,43 @@
+@import "main.scss";
+
+.userHeader{
+	width:100%;
+	height:200px;
+	background:url(./../images/header.png) no-repeat ;
+	background-size:cover;
+	@include flexBox;
+	@include flex-direction("clumn");
+	@include flex-center;	
+	img{
+		width:70px;				
+	}
+	h2{
+		width:100%;
+		text-align: center;
+		margin-top:10px;
+		color:#fff;
+	}
+
+}
+.kongBox{
+	width:100%;
+	height:10px;
+	background:#eee;
+}
+.coupon{
+	width:100%;
+	li{
+		width:100%;
+		height:70px;
+		box-sizing:border-box;
+		padding:25px;
+		font-size:18px;		
+		h3{
+			float:left;
+			font-weight:100;
+		}
+		p{
+			float:right;
+		}
+	}
+}

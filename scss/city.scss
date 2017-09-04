@@ -1,0 +1,25 @@
+@import "main.scss";
+
+.cityContent{
+	width:100%;
+	box-sizing:border-box;
+	padding-left:20px;
+	h2{
+		font-weight: 100;
+		font: 16px "宋体";
+		line-height:50px;
+	}
+	ul{
+		width:100%;
+		overflow: hidden;
+		li{
+			width:29%;
+			height:35px;
+			margin:0 10px 10px 0;
+			border:1px solid #ddd;
+			float:left;
+			text-align: center;
+			line-height: 35px;
+		}
+	}
+}

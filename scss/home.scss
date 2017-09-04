@@ -1,0 +1,47 @@
+@import "main.scss";
+
+.home{
+  width:100%; 
+
+  .content{
+      width:100%;
+      .everyFood{
+          width:100%;
+          box-sizing: border-box;
+          padding:20px;
+          .foodHeader{
+             width:100%;
+             h2{
+                 font: 23px "宋体";
+                 color:#666;               
+             };
+             p{
+                font-size: 15px;
+                color:#666;
+                color:red;
+                padding-bottom:20px; 
+             }
+          }
+          .foodList{
+              width:100%;
+              li{
+                  width:100%;
+                   margin-bottom:20px;
+                  img{
+                      width:100%;
+                      p{
+                          width:100%;
+                          font: 18px "宋体";
+                          color:#666;  
+                      }
+                     span{
+                          font-size: 13px;
+                          color:#666;  
+                     }
+                  }
+              }
+          }
+      }
+      
+  }
+}

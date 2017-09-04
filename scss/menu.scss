@@ -1,0 +1,266 @@
+
+@import "main.scss";
+
+.mainMenu{
+   width:100%;
+   height: 100%;
+    .menuContent{
+         width:100%;
+         height: 100%;
+         background: #fff;
+         .menutitle{
+             width:90%;
+             margin-left: 5%;
+             height: 50px;
+             line-height: 50px;
+             text-indent: 24px;
+             border-bottom: 1px solid #eee;
+         }
+        .menulist{
+            width:90%;
+            margin-left:5%;
+            li{
+                width:100%;
+                height: 60px;
+                border-bottom: 1px solid #eee;
+                @include flexBox;
+                @include flex-direction("row");
+                .list1{
+                    width:70%;
+                    height: 60px;
+                    line-height: 60px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .list2{
+                    width:15%;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                }
+                .list3{
+                    width:15%;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                }
+            }
+        }
+        .quan{
+            width:100%;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            .quanleft{
+                width:25%;
+                height:60px; 
+                float: left;
+                overflow: hidden;
+                span:nth-of-type(1){
+                    display: inline-block;
+                    width:21px;
+                    height: 21px;
+                    border-radius: 50%;  
+                    font-size:22px;
+                    color:red; 
+                }
+             }
+            .quanright{
+                width:35%;
+                height: 60px; 
+                float: right;
+                span:nth-of-type(1){
+                    color: #999;
+                    margin-right: 2px;
+                }
+            }
+        }
+        .quanbox{
+            width:100%;
+            height: 60px; 
+            display: none;
+            .textbox{
+                width:60%;
+                height: 60px;
+                margin-left: 5%;
+                margin-right: 5%;
+                float: left; 
+                .text{
+                    width:100%;
+                    height: 40px;
+                    border:1px  solid #eee;
+                    outline: 0;
+                }
+            }
+            .btnbox{
+                width:30%;
+                height: 60px;
+                float: left;
+                .btn{
+                    display: inline-block;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border: 0;
+                    width:80%;
+                    background:#FF3939;
+                    color: #fff;
+                    font-size: 14px;
+
+                }
+            }
+        }
+        .int{
+            width:100%;
+            height: 10px;
+            background:#fafafa;
+            border-top:1px solid #e6e6e6;
+            border-bottom:1px solid #e6e6e6;
+        }
+         .goodstotal{
+            width:100%;
+            height: 60px;
+            .totalleft{
+                width:25%;
+                height: 60px;
+                float: left;
+                line-height: 60px;
+                text-align: center;
+            }
+            .totalright{
+                width:25%;
+                float: right;
+                text-align: center;
+                line-height: 60px;
+                height: 60px;
+            }
+        }
+        .cover{
+            width:100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+            position: absolute;
+            left:0;
+            top:0;
+            display: none;
+        }
+        .paybox{
+            width:300px;
+            height: 230px;            
+            background:#eee;
+            z-index: 1;
+            position: absolute;
+            left:0;
+            top:0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 10px;
+            display: none;
+            .paycon{
+                width:100%;
+                height:16px; 
+                span{
+                    display: inline-block;
+                    width:16px;
+                    height: 16px; 
+                    float: right;
+                    font-size:18px; 
+                }
+            }
+            .paymenu{
+                width: 100%;
+                height:50px;
+                line-height:50px;
+                text-align: center;
+                font-size: 21px; 
+            }
+            .paymoney{
+                width:100%;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                font-size: 28px;
+                color: red;
+                margin-bottom: 10px;
+            }
+            .payway{
+                width:90%;
+                height:50px;  
+                background:#fff;              
+                line-height: 50px;
+                margin-left: 5%;
+                border-top: 1px  solid  #eee;
+                border-bottom: 1px solid #eee;
+                .way1{
+                    display: inline-block;
+                    width:60%;
+                    height: 50px;
+                    float: left; 
+                    line-height: 50px;
+                    img{
+                        display: inline-block;
+                        width:48px;
+                        height: 48px;
+                        float: left;
+                    }
+                    .spa1{
+                        display: inline-block;
+                        font-size: 12px;
+                        width:60%;
+                        height:50px;
+                        line-height:50px;
+                        float: left;
+                        margin-left: 5px;
+                    }
+                   
+                }
+                .way2{
+                    display: inline-block;
+                    width:40%;
+                    height: 50px;
+                    float: left;
+                    text-align: right;
+                    .spa2{
+                        display: inline-block;
+                        width: 21px;
+                        height: 21px;
+                    }
+                }
+            }
+        }
+        .menufooter{
+            width:100%;
+            height: 70px;
+            line-height: 70px;
+            @include flexBox;
+            @include flex-direction("row");
+            position: absolute;
+            bottom: 0;
+            .f1{
+                width:25%;
+                height: 70px;
+                line-height: 70px; 
+                margin-left: 45%;
+                text-align: center;
+                color: red;
+            }
+            .f2{
+                width:30%;
+                height: 70px;
+                line-height: 70px;
+                background: red;
+                text-align: center;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+         
+        
+         
+            
+    }
+
+  }
+

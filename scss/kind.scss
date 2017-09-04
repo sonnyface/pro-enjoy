@@ -1,0 +1,190 @@
+@import "main.scss";
+
+
+.kindContent{
+    width:100%;     
+    .banner{
+        width:100%;
+        overflow-y:auto;
+         overflow-x:hidden;  
+         ::-webkit-scrollbar {display:none}        
+        .bannerImg{
+          width:100%;
+            .kindHeader{
+              width:100%;
+              height:80px;
+              box-sizing: border-box;
+              padding:0 20px;
+              
+             .tit01{
+                 width:100%; 
+                 padding-top:20px;
+                 height:25px;
+                  h3{
+                      font:20px "宋体";
+                      color:#000;
+                      float:left;                                      
+                  }
+                 p{
+                      float:right;
+                      
+                  }
+               }
+             .tit02{
+                 width:100%;
+                 padding-top:5px;               
+                  p{
+                     font:14px "宋体";
+                     color:#666;
+                     i{
+                         font-size:20px;
+                     }
+                  }
+                  
+              }
+          }
+              .swiper{
+               width:100%; 
+               height:270px;          
+              
+               .swiperImg{
+                 width:90%;
+                 margin:0 5%;
+                   img{
+                      width:100%;
+                      height:190px;
+                     }
+               }
+              .swiperTit{
+                width:90%;
+                margin:0 5%;
+                padding-top:10px;            
+                p:nth-of-type(1){
+                  width:100%;
+                  font-size:12px;
+                  color:red;
+                 }
+                 p:nth-of-type(2){
+                  width:100%;
+                  font-size:16.5px;
+                  color:#000;
+                 }
+                 p:nth-of-type(3){
+                  width:100%;
+                  font-size:12px;
+                  color:#666;
+                 }
+
+              }
+               
+           }
+        }
+        
+      .mainhead{
+         width:100%;
+          box-sizing:border-box;
+          padding:0 20px ;
+          
+          p{
+            width:100%;
+            border-bottom:1px solid #ddd; 
+          }  
+      }
+       .main1{
+          width:100%;
+          height:120px;
+          box-sizing:border-box;
+          padding:0 20px ;         
+          overflow-x:auto;         
+          ::-webkit-scrollbar{display:none}
+         
+          ul{
+            width:145%;
+            height:100%; 
+            
+            li{
+                width:30%;
+                 margin-top:20px;
+                 position:relative;
+                 float:left;
+                 margin-right:10px;
+
+                img{
+                      width:100%;
+                  }
+                  .conver{
+                    width:100%;
+                    height:100%;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    @include flexBox;
+                    @include flex-center;
+                    p:first-child{
+                      color:#fff;
+                      font-size:17px;
+                      padding-bottom:5px;
+                    }
+                    p:last-child{
+                      color:#fff;
+                      font-size:12px;
+                    }
+
+                  }
+              }
+          }
+       }
+       .mainFoot{
+         width:100%;
+          box-sizing:border-box;
+          padding:0 20px ;
+          
+          p{
+            width:100%;
+            border-bottom:1px solid #ddd; 
+          }  
+      }
+
+       .wine{
+          width:100%;          
+          .foodBay{
+            width:100%;
+            height:180px;
+            box-sizing:border-box;
+            padding:20px;
+            border-bottom: 1px solid #ddd;
+           .moreWine{
+              width:100%;
+              height: 40px;
+              h2{
+                font:25px "宋体";
+                float:left;
+              }
+              p{
+                font-size:16px  "宋体";
+                float:right;
+                color:red;
+              }
+            }
+            .newShop{
+              width:100%;
+              height:30px;
+              p{
+                 font:13px "宋体";
+                 color:#666;
+              }  
+            }
+            .imager{
+              width:100%;
+              height:80px;
+              @include flexBox;
+              @include flex-direction("row");
+              box-sizing:border-box;
+              img{
+                width:33.3%;
+              }
+            }
+          }
+       }
+    }
+}
